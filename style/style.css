@@ -74,7 +74,7 @@ nav li {
 }
 
 .hero-pic {
-  background-image: url(/assets/86drift.jpg);
+  background-image: url(/assets/images/86drift.jpg);
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
@@ -315,7 +315,7 @@ nav i {
 
   .hero-pic {
     height: 60vh;
-    background-image: url(/assets/supra.jpg);
+    background-image: url(/assets/images/supra.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
