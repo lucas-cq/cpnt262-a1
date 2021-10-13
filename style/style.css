@@ -1,0 +1,333 @@
+body {
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
+
+.header-class {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.div-img {
+  max-width: 120px;
+}
+
+.header-color {
+  background-color: #ff2643;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ********** */
+/* Navigation */
+/* ********** */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #000000;
+  padding: 4px 25px;
+  border-radius: 12px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+nav a:hover {
+  background-color: #737373;
+}
+
+
+nav ul {
+  margin-left: auto;
+  margin-top: 15px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+/* ********* */
+/* Hero Card */
+/* ********* */
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.hero-pic {
+  background-image: url(/assets/86drift.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+}
+
+.hero-pic h1 {
+  color: whitesmoke;
+  background-color: hsla(1, 10%, 10%, 0.8);
+  padding: 15px 20px 15px 20px;
+  margin: 40px 20px auto 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.hero-pic p {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px 5vw 10px 5vw;
+  border-radius: 20px;
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  background-color: hsla(1, 10%, 10%, 0.8);
+  border: 1px solid black;
+}
+
+.hero-pic button {
+  font-size: 30px;
+  font-family: 'Teko', sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  background-color: whitesmoke;
+  border-style: none;
+  transition-duration: 0.4s;
+  border: 3px solid #ff2643;
+  margin-top: 35px;
+}
+
+button:hover {
+  background-color: #ff2643;
+}
+
+/* **** */
+/* Body */
+/* **** */
+
+h1 {
+  font-size: 80px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: 'Teko', sans-serif;
+  margin: 25px auto 5px auto;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Teko', sans-serif;
+  margin: 15px 0px 3px 0px;
+  padding: 0 auto;
+}
+
+.article-text {
+  font-size: 20px;
+  margin: 0px 0px 30px 0px;
+  padding: 0 auto;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100ch;
+}
+
+.article-list {
+  font-size: 20px;
+  margin: 0px 60px 10px 30px;
+  padding: 0 auto;
+}
+
+.article-text p {
+  font-family: 'Lato', sans-serif;
+}
+
+/* ****** */
+/* Footer */
+/* ****** */
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ff2643;
+  padding: 10px;
+  margin: 30px 0px 0px 0px;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0 auto;
+  padding: 0 auto;
+}
+
+.footer-logo {
+  width: 50px;
+  margin: 5px 20px 5px 20px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.list-style {
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* **** */
+/* Form */
+/* **** */
+
+form h1 {
+  font-size: 60px;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  margin-top: 35px;
+}
+
+fieldset .label-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: row;
+  font-size: 20px;
+  font-family: 'lato', sans-serif;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+fieldset ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: 'lato', sans-serif;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 10px 40px 10px 40px;
+}
+
+form h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  font-size: 25px;
+  color: whitesmoke;
+  background-color: black;
+  border-style: none;
+  border-radius: 25px;
+  padding: 13px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition-duration: 0.4s;
+}
+
+/* ***** */
+/* Video */
+/* ***** */
+
+.vid-box {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 30px auto 30px auto;
+}
+
+/* ****** */
+/* Mobile */
+/* ****** */
+
+nav i {
+  font-size: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .article-text {
+    font-size: 16px;
+    margin: auto 15px auto 15px;
+  }
+  .hero-pic h1 {
+    font-size: 50px;
+  }
+  .hero-pic p {
+    font-size: 20px
+  }
+  .footer-logo {
+    width: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .hero-pic {
+    height: 60vh;
+    background-image: url(/assets/supra.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: none;
+  }
+
+  nav i {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+}
