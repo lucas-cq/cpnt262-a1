@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="style/style.css">
+  <script src="javascript/client.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/623d8044c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--The Navigation Bar-->
   <header class="header-color">
     <div class="header-class">
-      <nav>
+      <nav class="desktop-nav">
         <img class="div-img" src="assets/images/1143281-200.png" alt="logo">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,8 +25,22 @@
           <li><a href="#">Gallery</a></li>
         </ul>
       </nav>
+      <div class="hamburger" onclick="openMenu()">
+        <img class="bar" src="assets/svg/bars.svg" alt="Navigation">
+      </div>
+      <div class="close-menu" onclick="closeMenu()">
+        <img class="cross" src="assets/svg/times.svg" alt="Close Navigation">
+      </div>
     </div>
   </header>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
     <!--Hero Section-->
       <section class="hero-pic hero-text">
         <div class="hero-text">
