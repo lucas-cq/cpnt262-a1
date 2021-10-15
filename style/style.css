@@ -62,18 +62,6 @@ header::after {
   margin-top: 25px;
 }
 
-.hamburger {
-  display: none;
-}
-
-.close-menu {
-  display: none;
-}
-
-.mobile-nav {
-  display: none;
-}
-
 /* ********* */
 /* Hero Card */
 /* ********* */
@@ -123,7 +111,7 @@ header::after {
   background-color: whitesmoke;
   border-style: none;
   transition-duration: 0.4s;
-  border: 3px solid #ff2643;
+  border: 3px solid #ff3852;
   margin-top: 35px;
 }
 
@@ -301,12 +289,16 @@ form h2 {
 /* ****** */
 /* Mobile */
 /* ****** */
+.mobile-nav {
+  display: none;
+}
 
 .mobile-nav a {
   list-style: none;
   text-decoration: none;
   color: white;
   background-color: #000000;
+  border-radius: 5px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   padding: 10px 80px;
@@ -314,9 +306,18 @@ form h2 {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+.bar {
+  display: block;
+  width: 40px;
+  height: 8px;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
   .article-text {
     font-size: 16px;
     margin: auto 15px auto 15px;
@@ -353,24 +354,22 @@ form h2 {
     justify-content: space-around;
   }
 
+  /* ************* */
+  /* Hamburger Nav */
+  /* ************* */
   .hamburger {
-    position: sticky;
-    display: flex;
-    width: 40px;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    cursor: pointer;
+    display: block;
+    margin-top: 30px;
   }
 
-  div .close-menu {
-    display: flex;
-    justify-content: row;
-    width: 40px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    cursor: pointer;
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(25px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-6.5px) rotate(-45deg);
   }
 
   .header-class {
@@ -380,16 +379,18 @@ form h2 {
     margin-right: auto;
   }
 
-  .mobile-nav::before {
+  .mobile-nav{
     display: none;
   }
 
-  .mobile-nav {
+  .mobile-nav.active {
+    position: absolute;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 30px;
-    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #ff4d64;
   }
 
   .mobile-nav ul {
@@ -398,9 +399,7 @@ form h2 {
 
   .mobile-nav li {
     margin-top: 50px;
+    margin-bottom: 20px;
   }
 
-  .cross {
-    display: none;
-  }
 }
