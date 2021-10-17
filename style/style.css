@@ -218,62 +218,6 @@ a {
   text-decoration: none;
 }
 
-/* **** */
-/* Form */
-/* **** */
-
-form h1 {
-  font-size: 60px;
-}
-
-.form-box {
-  display: flex;
-  justify-content: center;
-  align-items: column;
-  margin-top: 35px;
-}
-
-fieldset .label-box{
-  display: flex;
-  justify-content: flex-start;
-  align-items: row;
-  font-size: 20px;
-  font-family: 'lato', sans-serif;
-}
-
-input {
-  margin-bottom: 10px;
-}
-
-fieldset ul {
-  list-style: none;
-  font-size: 20px;
-  font-family: 'lato', sans-serif;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-fieldset {
-  padding: 10px 40px 10px 40px;
-}
-
-form h2 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.submit-button {
-  font-size: 25px;
-  color: whitesmoke;
-  background-color: black;
-  border-style: none;
-  border-radius: 25px;
-  padding: 13px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  transition-duration: 0.4s;
-}
-
 /* ***** */
 /* Video */
 /* ***** */
@@ -362,13 +306,13 @@ form h2 {
     margin-top: 30px;
   }
 
-  .hamburger.active .bar:nth-child(2){
+  .hamburger.open .bar:nth-child(2){
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
+  .hamburger.open .bar:nth-child(1){
     transform: translateY(25px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
+  .hamburger.open .bar:nth-child(3){
     transform: translateY(-6.5px) rotate(-45deg);
   }
 
@@ -383,7 +327,7 @@ form h2 {
     display: none;
   }
 
-  .mobile-nav.active {
+  .mobile-nav.open {
     position: absolute;
     display: flex;
     flex-direction: column;
